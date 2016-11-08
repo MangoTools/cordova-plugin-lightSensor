@@ -64,8 +64,6 @@ Disable the light sensor.
     function onSuccess(state) {
         alert('Light Sensor state: ' + state);
     };
-
-    navigator.proximity.enableSensor();
     
     setInterval(function(){
       window.light.getLightState(onSuccess);
